@@ -339,6 +339,8 @@ namespace Alice
             return Get_pathGuard();
         case PlayerAttackState::Parry:
             return Get_pathParry();
+        case PlayerAttackState::Hit:
+            return Get_pathHit();
         default:
             return "";
         }
@@ -393,6 +395,7 @@ namespace Alice
         case PlayerAttackState::Attack3:     return Get_volumeAttack3();
         case PlayerAttackState::Guard:       return Get_volumeGuard();
         case PlayerAttackState::Parry:       return Get_volumeParry();
+        case PlayerAttackState::Hit:         return Get_volumeHit();
         default:
             return 1.0f;
         }

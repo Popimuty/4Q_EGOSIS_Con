@@ -36,6 +36,8 @@ namespace Alice
         ALICE_PROPERTY(std::string, pathAttack3, "Resource/Test/4_Resources/sound/SFX/Player/Attack3/Player_Attack_03.wav");
         ALICE_PROPERTY(std::string, pathGuard, "Resource/Test/4_Resources/sound/SFX/Player/Guard/Player_Guard_01.mp3");
         ALICE_PROPERTY(std::string, pathParry, "Resource/Test/4_Resources/sound/SFX/Player/parry/Player_Parry_01.wav");
+        // 플레이어 피격 사운드 (히트 위치에서 3D 재생)
+        ALICE_PROPERTY(std::string, pathHit, "Resource/Test/4_Resources/sound/SFX/Player/Hit/Player_Hit_01.wav");
         
         // 광폭화 공격 경로 (광폭화 상태일 때 Attack1/2/3 대신 사용)
         ALICE_PROPERTY(std::string, pathRageAttack1, "Resource/Test/4_Resources/sound/SFX/Player/BuffAttack/Player_Buff_Attack_A_01.mp3");
@@ -65,6 +67,7 @@ namespace Alice
         ALICE_PROPERTY(float, volumeAttack3, 1.0f);
         ALICE_PROPERTY(float, volumeGuard, 1.0f);
         ALICE_PROPERTY(float, volumeParry, 1.0f);
+        ALICE_PROPERTY(float, volumeHit, 1.0f);
         ALICE_PROPERTY(float, volumeRoll, 1.0f);
         ALICE_PROPERTY(float, volumeRun, 1.0f);
         ALICE_PROPERTY(float, volumeDash, 1.0f);

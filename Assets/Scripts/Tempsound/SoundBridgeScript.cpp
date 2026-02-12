@@ -433,7 +433,8 @@ namespace Alice
              bus->RequestPlayerOtherSfx(PlayerOtherState::GuardBreak);
                     break;
                 case Combat::ResolveResult::Hit:
-                    // 플레이어가 맞았을 때 (현재는 사운드 없음)
+                    // 플레이어가 맞았을 때: 히트 위치에서 피격 사운드 재생
+                    bus->RequestPlayerAttackSfxOneShotAtPosition(PlayerAttackState::Hit, hitPos);
                     break;
                 default:
                     break;

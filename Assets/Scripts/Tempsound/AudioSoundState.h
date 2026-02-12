@@ -51,6 +51,8 @@ namespace Alice
         Attack3,
         Guard,
         Parry,
+        /// 플레이어가 피격당했을 때 사용하는 히트 사운드 상태
+        Hit,
         Count
     };
 
